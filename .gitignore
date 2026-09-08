@@ -24,3 +24,4 @@ samples/demo_fullres/aptos_*
 
 # local runtime state
 *.db
+models/*_err.txt

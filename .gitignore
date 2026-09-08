@@ -2,7 +2,6 @@
 .venv/
 __pycache__/
 *.pyc
-.claude/
 
 # datasets (download via README) and derived caches
 data/

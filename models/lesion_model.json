@@ -1,0 +1,16 @@
+{
+  "classes": [
+    "background",
+    "cotton_wool_spot",
+    "hard_exudate",
+    "haemorrhage",
+    "microaneurysm"
+  ],
+  "input_size": 512,
+  "normalize": "imagenet",
+  "source": "ClementP/fundus-lesions-segmentation-unet_seresnext50_32x4d (MIT)",
+  "params": 34524549,
+  "onnx_mb": 138.0,
+  "cpu_ms_first_run": 462,
+  "max_abs_diff_vs_torch": 9.1552734375e-05
+}

@@ -1,0 +1,142 @@
+/* RetinaEdge design tokens. Light on :root, dark under [data-theme="dark"], system via media query. */
+
+:root {
+  color-scheme: light;
+
+  --primary: #1c6e74;
+  --primary-ink: #ffffff;
+  --primary-soft: rgba(28, 110, 116, 0.1);
+  --primary-strong: #155a5f;
+
+  --accent: #d2521c;
+  --accent-soft: rgba(210, 82, 28, 0.12);
+
+  --good: #2e7d4f;
+  --good-soft: rgba(46, 125, 79, 0.12);
+  --warn: #b7791f;
+  --warn-soft: rgba(183, 121, 31, 0.14);
+  --critical: #b3261e;
+  --critical-soft: rgba(179, 38, 30, 0.12);
+
+  --bg: #f2f5f3;
+  --surface: #ffffff;
+  --surface-2: #e9eeec;
+  --ink: #16211f;
+  --muted: #54635f;
+  --line: #d5ddd9;
+  --line-strong: #b8c4bf;
+
+  --overlay-scrim: rgba(22, 33, 31, 0.55);
+  --shadow-1: 0 1px 2px rgba(22, 33, 31, 0.06), 0 1px 3px rgba(22, 33, 31, 0.08);
+  --shadow-2: 0 4px 12px rgba(22, 33, 31, 0.1), 0 2px 4px rgba(22, 33, 31, 0.06);
+
+  --font-heading: 'Sora', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-hero: 3.5rem;
+
+  --s-0: 4px;
+  --s-1: 8px;
+  --s-2: 16px;
+  --s-3: 24px;
+  --s-4: 32px;
+  --s-5: 40px;
+  --s-6: 48px;
+  --s-8: 64px;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  --focus-ring: 0 0 0 3px rgba(28, 110, 116, 0.35);
+  --sidebar-w: 240px;
+  --header-h: 60px;
+  --tabbar-h: 60px;
+  --content-max: 1200px;
+
+  --dur: 160ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --primary: #5cc3c9;
+  --primary-ink: #0d1a1b;
+  --primary-soft: rgba(92, 195, 201, 0.16);
+  --primary-strong: #7ad2d7;
+
+  --accent: #f07a3f;
+  --accent-soft: rgba(240, 122, 63, 0.16);
+
+  --good: #5fc58a;
+  --good-soft: rgba(95, 197, 138, 0.16);
+  --warn: #e0a64a;
+  --warn-soft: rgba(224, 166, 74, 0.16);
+  --critical: #f07068;
+  --critical-soft: rgba(240, 112, 104, 0.16);
+
+  --bg: #101715;
+  --surface: #182220;
+  --surface-2: #1f2b28;
+  --ink: #e8eeeb;
+  --muted: #9fb0aa;
+  --line: #2b3834;
+  --line-strong: #3d4d48;
+
+  --overlay-scrim: rgba(0, 0, 0, 0.65);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  --focus-ring: 0 0 0 3px rgba(92, 195, 201, 0.45);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --primary: #5cc3c9;
+    --primary-ink: #0d1a1b;
+    --primary-soft: rgba(92, 195, 201, 0.16);
+    --primary-strong: #7ad2d7;
+
+    --accent: #f07a3f;
+    --accent-soft: rgba(240, 122, 63, 0.16);
+
+    --good: #5fc58a;
+    --good-soft: rgba(95, 197, 138, 0.16);
+    --warn: #e0a64a;
+    --warn-soft: rgba(224, 166, 74, 0.16);
+    --critical: #f07068;
+    --critical-soft: rgba(240, 112, 104, 0.16);
+
+    --bg: #101715;
+    --surface: #182220;
+    --surface-2: #1f2b28;
+    --ink: #e8eeeb;
+    --muted: #9fb0aa;
+    --line: #2b3834;
+    --line-strong: #3d4d48;
+
+    --overlay-scrim: rgba(0, 0, 0, 0.65);
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.35);
+    --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    --focus-ring: 0 0 0 3px rgba(92, 195, 201, 0.45);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur: 0ms;
+  }
+}

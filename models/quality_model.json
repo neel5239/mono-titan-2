@@ -1,0 +1,351 @@
+{
+  "labels": [
+    "not_fundus",
+    "no_lens",
+    "blur",
+    "glare",
+    "dark",
+    "bright",
+    "off_centre"
+  ],
+  "input_size": 256,
+  "normalize": "imagenet",
+  "model": "mobilenetv3_small_100",
+  "output": "sigmoid_logits_multilabel",
+  "val_metrics": {
+    "not_fundus": {
+      "ap": 1.0,
+      "auc": 1.0,
+      "acc@0.5": 1.0,
+      "positives": 283
+    },
+    "no_lens": {
+      "ap": 0.9562,
+      "auc": 0.9874,
+      "acc@0.5": 0.9358,
+      "positives": 248
+    },
+    "blur": {
+      "ap": 0.9999,
+      "auc": 1.0,
+      "acc@0.5": 0.9992,
+      "positives": 146
+    },
+    "glare": {
+      "ap": 0.9998,
+      "auc": 1.0,
+      "acc@0.5": 0.9975,
+      "positives": 154
+    },
+    "dark": {
+      "ap": 0.9993,
+      "auc": 0.9999,
+      "acc@0.5": 0.9975,
+      "positives": 141
+    },
+    "bright": {
+      "ap": 0.999,
+      "auc": 0.9998,
+      "acc@0.5": 0.9975,
+      "positives": 144
+    },
+    "off_centre": {
+      "ap": 1.0,
+      "auc": 1.0,
+      "acc@0.5": 1.0,
+      "positives": 178
+    },
+    "mean_ap": 0.9935
+  },
+  "trained_on": "3743 fundus (APTOS+IDRiD) with synthetic degradations + 13798 non-fundus photos",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.15061747287400068,
+      "seconds": 427,
+      "not_fundus": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 0.9992,
+        "positives": 283
+      },
+      "no_lens": {
+        "ap": 0.9189,
+        "auc": 0.977,
+        "acc@0.5": 0.9225,
+        "positives": 248
+      },
+      "blur": {
+        "ap": 0.9757,
+        "auc": 0.9955,
+        "acc@0.5": 0.9692,
+        "positives": 146
+      },
+      "glare": {
+        "ap": 0.9759,
+        "auc": 0.9939,
+        "acc@0.5": 0.9825,
+        "positives": 154
+      },
+      "dark": {
+        "ap": 0.9759,
+        "auc": 0.9915,
+        "acc@0.5": 0.9867,
+        "positives": 141
+      },
+      "bright": {
+        "ap": 0.9093,
+        "auc": 0.9771,
+        "acc@0.5": 0.9558,
+        "positives": 144
+      },
+      "off_centre": {
+        "ap": 0.9889,
+        "auc": 0.9974,
+        "acc@0.5": 0.9883,
+        "positives": 178
+      },
+      "mean_ap": 0.9635
+    },
+    {
+      "epoch": 2,
+      "loss": 0.057098140325397256,
+      "seconds": 256,
+      "not_fundus": {
+        "ap": 0.9997,
+        "auc": 0.9999,
+        "acc@0.5": 0.9917,
+        "positives": 283
+      },
+      "no_lens": {
+        "ap": 0.9223,
+        "auc": 0.9751,
+        "acc@0.5": 0.91,
+        "positives": 248
+      },
+      "blur": {
+        "ap": 0.9907,
+        "auc": 0.9986,
+        "acc@0.5": 0.9858,
+        "positives": 146
+      },
+      "glare": {
+        "ap": 0.9526,
+        "auc": 0.9852,
+        "acc@0.5": 0.9717,
+        "positives": 154
+      },
+      "dark": {
+        "ap": 0.99,
+        "auc": 0.9982,
+        "acc@0.5": 0.9917,
+        "positives": 141
+      },
+      "bright": {
+        "ap": 0.9829,
+        "auc": 0.9965,
+        "acc@0.5": 0.9833,
+        "positives": 144
+      },
+      "off_centre": {
+        "ap": 0.9985,
+        "auc": 0.9997,
+        "acc@0.5": 0.9867,
+        "positives": 178
+      },
+      "mean_ap": 0.9767
+    },
+    {
+      "epoch": 3,
+      "loss": 0.04676881779218092,
+      "seconds": 295,
+      "not_fundus": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 1.0,
+        "positives": 283
+      },
+      "no_lens": {
+        "ap": 0.932,
+        "auc": 0.9792,
+        "acc@0.5": 0.9208,
+        "positives": 248
+      },
+      "blur": {
+        "ap": 0.9894,
+        "auc": 0.9975,
+        "acc@0.5": 0.9883,
+        "positives": 146
+      },
+      "glare": {
+        "ap": 0.9896,
+        "auc": 0.9979,
+        "acc@0.5": 0.9808,
+        "positives": 154
+      },
+      "dark": {
+        "ap": 0.9933,
+        "auc": 0.999,
+        "acc@0.5": 0.9867,
+        "positives": 141
+      },
+      "bright": {
+        "ap": 0.991,
+        "auc": 0.9975,
+        "acc@0.5": 0.9925,
+        "positives": 144
+      },
+      "off_centre": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 0.9967,
+        "positives": 178
+      },
+      "mean_ap": 0.985
+    },
+    {
+      "epoch": 4,
+      "loss": 0.02882463069690857,
+      "seconds": 282,
+      "not_fundus": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 1.0,
+        "positives": 283
+      },
+      "no_lens": {
+        "ap": 0.957,
+        "auc": 0.9876,
+        "acc@0.5": 0.9333,
+        "positives": 248
+      },
+      "blur": {
+        "ap": 0.9999,
+        "auc": 1.0,
+        "acc@0.5": 0.9958,
+        "positives": 146
+      },
+      "glare": {
+        "ap": 0.9993,
+        "auc": 0.9999,
+        "acc@0.5": 0.9967,
+        "positives": 154
+      },
+      "dark": {
+        "ap": 0.9971,
+        "auc": 0.9996,
+        "acc@0.5": 0.9933,
+        "positives": 141
+      },
+      "bright": {
+        "ap": 0.9963,
+        "auc": 0.9991,
+        "acc@0.5": 0.9967,
+        "positives": 144
+      },
+      "off_centre": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 0.9992,
+        "positives": 178
+      },
+      "mean_ap": 0.9928
+    },
+    {
+      "epoch": 5,
+      "loss": 0.02120585530763492,
+      "seconds": 259,
+      "not_fundus": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 1.0,
+        "positives": 283
+      },
+      "no_lens": {
+        "ap": 0.9515,
+        "auc": 0.9859,
+        "acc@0.5": 0.9325,
+        "positives": 248
+      },
+      "blur": {
+        "ap": 0.9999,
+        "auc": 1.0,
+        "acc@0.5": 0.9983,
+        "positives": 146
+      },
+      "glare": {
+        "ap": 0.9996,
+        "auc": 0.9999,
+        "acc@0.5": 0.9958,
+        "positives": 154
+      },
+      "dark": {
+        "ap": 0.9993,
+        "auc": 0.9999,
+        "acc@0.5": 0.9975,
+        "positives": 141
+      },
+      "bright": {
+        "ap": 0.9993,
+        "auc": 0.9999,
+        "acc@0.5": 0.9975,
+        "positives": 144
+      },
+      "off_centre": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 1.0,
+        "positives": 178
+      },
+      "mean_ap": 0.9928
+    },
+    {
+      "epoch": 6,
+      "loss": 0.017389519914868288,
+      "seconds": 277,
+      "not_fundus": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 1.0,
+        "positives": 283
+      },
+      "no_lens": {
+        "ap": 0.9562,
+        "auc": 0.9874,
+        "acc@0.5": 0.9358,
+        "positives": 248
+      },
+      "blur": {
+        "ap": 0.9999,
+        "auc": 1.0,
+        "acc@0.5": 0.9992,
+        "positives": 146
+      },
+      "glare": {
+        "ap": 0.9998,
+        "auc": 1.0,
+        "acc@0.5": 0.9975,
+        "positives": 154
+      },
+      "dark": {
+        "ap": 0.9993,
+        "auc": 0.9999,
+        "acc@0.5": 0.9975,
+        "positives": 141
+      },
+      "bright": {
+        "ap": 0.999,
+        "auc": 0.9998,
+        "acc@0.5": 0.9975,
+        "positives": 144
+      },
+      "off_centre": {
+        "ap": 1.0,
+        "auc": 1.0,
+        "acc@0.5": 1.0,
+        "positives": 178
+      },
+      "mean_ap": 0.9935
+    }
+  ]
+}

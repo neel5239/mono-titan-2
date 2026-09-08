@@ -1,0 +1,27 @@
+# environments / caches
+.venv/
+__pycache__/
+*.pyc
+.claude/
+
+# datasets (download via README) and derived caches
+data/
+!data/.gitkeep
+
+# model binaries (regenerate: scripts/export_*.py, train/train_*.py); metrics JSON is kept
+models/*.onnx
+models/*.pt
+models/_*/
+models/archive/
+models/*log*.txt
+
+# frontend build output and deps
+frontend/node_modules/
+frontend/dist/
+
+# APTOS-derived sample images (Kaggle competition terms forbid redistribution)
+samples/demo/aptos_*
+samples/demo_fullres/aptos_*
+
+# local runtime state
+*.db

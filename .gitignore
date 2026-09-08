@@ -8,8 +8,10 @@ data/
 !data/.gitkeep
 
 # model binaries (regenerate: scripts/export_*.py, train/train_*.py); metrics JSON is kept
-models/*.onnx
 models/*.pt
+models/*_fp32.*
+models/*_int8.onnx
+models/*_interim.*
 models/_*/
 models/archive/
 models/*log*.txt

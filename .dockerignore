@@ -1,0 +1,17 @@
+data/
+models/_*/
+models/archive/
+models/*.pt
+models/*_fp32.*
+models/*_int8.onnx
+models/*_interim.*
+models/*log*.txt
+frontend/node_modules/
+frontend/dist/
+samples/
+docs/
+train/
+scripts/
+.git/
+.claude/
+*.db

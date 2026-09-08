@@ -3,33 +3,33 @@
   "n_images": 27,
   "per_class": {
     "cotton_wool_spot": {
-      "pixel_dice": 0.6815,
-      "pixel_precision": 0.6802,
-      "pixel_recall": 0.6828,
+      "pixel_dice": 0.698,
+      "pixel_precision": 0.689,
+      "pixel_recall": 0.7071,
       "images_with_lesion": 14,
       "images_detected": 9,
       "image_recall": 0.643
     },
     "hard_exudate": {
-      "pixel_dice": 0.6796,
-      "pixel_precision": 0.6101,
-      "pixel_recall": 0.7669,
+      "pixel_dice": 0.6863,
+      "pixel_precision": 0.6348,
+      "pixel_recall": 0.7469,
       "images_with_lesion": 27,
-      "images_detected": 27,
-      "image_recall": 1.0
+      "images_detected": 26,
+      "image_recall": 0.963
     },
     "haemorrhage": {
-      "pixel_dice": 0.6206,
+      "pixel_dice": 0.6197,
       "pixel_precision": 0.6744,
-      "pixel_recall": 0.5748,
+      "pixel_recall": 0.5732,
       "images_with_lesion": 27,
-      "images_detected": 25,
-      "image_recall": 0.926
+      "images_detected": 24,
+      "image_recall": 0.889
     },
     "microaneurysm": {
       "pixel_dice": 0.2145,
-      "pixel_precision": 0.1621,
-      "pixel_recall": 0.3171,
+      "pixel_precision": 0.1749,
+      "pixel_recall": 0.2773,
       "images_with_lesion": 27,
       "images_detected": 25,
       "image_recall": 0.926

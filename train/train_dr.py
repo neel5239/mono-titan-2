@@ -159,6 +159,7 @@ def main(a):
     best = base['qwk'] if (a.init == 'clementp' or a.init_checkpoint) else -1; best_thr = [0.5, 1.5, 2.5, 3.5]; history = [{'epoch': 0, **base}]
     if dl_ph:
         ph0, _, _ = evaluate(model, dl_ph, device); print('epoch 0 phone-sim hold-out qwk', round(ph0['qwk'], 4), 'sens', round(ph0['referable_sensitivity'], 3), 'spec', round(ph0['referable_specificity'], 3)); history[0]['phone_sim'] = ph0
+        best = 0.5 * (base['qwk'] + ph0['qwk']) if best > -1 else best   # compare like with like: epochs are selected on the mean of both QWKs
     if a.init == 'clementp' or a.init_checkpoint:
         torch.save({'state_dict': model.state_dict(), 'classes': CLASSES, 'val_metrics': base, 'thresholds': best_thr}, out / 'dr_grader.pt')
     for ep in range(1, a.epochs + 1):

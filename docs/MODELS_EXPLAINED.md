@@ -154,7 +154,8 @@ Why: a model that has already seen 100,000+ retinas knows what vessels, the opti
 | B0, 256 px, 6 epochs | 0.889 | 0.98 / 0.89 | 0.973 | 15% |
 | **B2, 288 px, 10 epochs (main app :8000)** | **0.905** | 0.97 / 0.90 | 0.978 | 31% |
 | **B2, 512 px full-res, 8 epochs (clone :8001)** | **0.918** | 0.97 / 0.93 | 0.982 | 37% |
-| B2-512 Pro, phone-lens augmentation (training) | – | – | – | – |
+| **B2-512 Pro, phone-lens augmentation (clone :8001)** | 0.911 | 0.98 / 0.92 | 0.984 | 32% |
+| B2-512 Pro on the phone-simulated hold-out | 0.853 | 0.90 / 0.91 | – | – |
 
 Detail of the B0 run below; the B2 confusion matrix is in `MODEL_CARD.md`.
 
